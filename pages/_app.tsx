@@ -2,12 +2,9 @@ import type { AppProps } from "next/app";
 import { providers } from "ethers";
 import { WagmiConfig, createClient, configureChains, chain } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
+import { LivepeerConfig } from "@livepeer/react";
 import "../styles/globals.css";
-import {
-  LivepeerConfig,
-  createReactClient,
-  studioProvider,
-} from "@livepeer/react";
+import { createReactClient, studioProvider } from "@livepeer/react";
 import { CoinbaseWalletConnector } from "wagmi/connectors/coinbaseWallet";
 import { MetaMaskConnector } from "wagmi/connectors/metaMask";
 import { WalletConnectConnector } from "wagmi/connectors/walletConnect";

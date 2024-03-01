@@ -6,10 +6,10 @@ export default function Hero() {
   const [showModal, setShowModal] = useState(false);
   const [onInputChange, setOnInputChange] = useState("");
   return (
-    <Page>
+    <>
       <Nav />
-      <section className="relative py-12 sm:py-16 lg:py-44 lg:pb-36 bg-white md:max-w-7xl md:mx-auto">
-        <div className="px-4 mx-auto  sm:px-6 lg:px-8">
+      <section className="relative py-12 sm:py-16 lg:py-44 bg-fuchsia-50 md:max-w-7xl md:mx-auto">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <div className="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-8">
             <div>
               <div className="text-center lg:text-left">
@@ -67,6 +67,6 @@ export default function Hero() {
           }}
         />
       )}
-    </Page>
+    </>
   );
 }
