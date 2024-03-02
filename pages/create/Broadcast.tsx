@@ -103,6 +103,8 @@ export default function Broadcast() {
       mode: "cors",
       headers: {
         "content-type": "application/sdp",
+        "Authorization": `Bearer ${process.env.NEXT_PUBLIC_STUDIO_API_KEY as string}`,
+        "Access-Control-Allow-Origin": "https://sansbananas.vercel.app"
       },
       //ignore ts error
       // eslint-disable-next-line 
