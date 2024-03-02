@@ -101,10 +101,10 @@ export default function Broadcast() {
     const sdpResponse = await fetch(redirectUrl, {
       method: "POST",
       mode: "cors",
+      referrer: "https://sansbananas.vercel.app",
       headers: {
         "content-type": "application/sdp",
         "Authorization": `Bearer ${process.env.NEXT_PUBLIC_STUDIO_API_KEY as string}`,
-        "Access-Control-Allow-Origin": "https://sansbananas.vercel.app"
       },
       //ignore ts error
       // eslint-disable-next-line 
