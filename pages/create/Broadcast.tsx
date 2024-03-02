@@ -42,7 +42,7 @@ export default function Broadcast() {
     const stream = canvas.captureStream(30);
     const mediaRecorder = new MediaRecorder(stream);
 
-    const redirectUrl = `https://lax-prod-catalyst-2.lp-playback.studio/webrtc/7450335d-bffa-4b38-82b9-ce0139ff4ff1`;
+    const redirectUrl = `https://lax-prod-catalyst-2.lp-playback.studio/webrtc/6732-fijc-m137-hwjq`;
     // we use the host from the redirect URL in the ICE server configuration
     const host = new URL(redirectUrl).host;
 
